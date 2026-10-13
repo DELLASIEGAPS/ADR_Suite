@@ -88,7 +88,7 @@
           <bt:String id="TaskpaneButton.Label" DefaultValue="ADR Suite"/>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Ouvre le portail ADR Outlook Suite V1 - 9 modules Hérisson, Mailing, Archives, QuiEstCe, Absences, Syndicats, Déconnexion, Signature"/>
+          <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Portail ADR Outlook Suite SPOT"/>
         </bt:LongStrings>
       </Resources>
     </VersionOverrides>
