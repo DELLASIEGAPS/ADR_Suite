@@ -77,13 +77,13 @@
       <button class="card" onclick="showModule('retour')"><span class="status wip"></span>
        <img
   class="icon"
-  src="https://dellasiegaexternal2.github.io/ADR_Suite/assets/img/MailBackupTool.svg"
+  src="https://dellasiegaps.github.io/ADR_Suite/assets/img/MailBackupTool.svg"
   alt="Retour_Mailing">
        <span class="label">Retour<br>Mailing</span></button>
 
       <button class="card" onclick="showModule('archives')"><span class="status ok"></span>  <img
   class="icon"
-  src="https://dellasiegaps.github.io/ADR_Suite/assets/img/SPOT_MesArchives_DB_Icon.png"
+  src=https://dellasiegaps.github.io/ADR_Suite/assets/img/SPOT_MesArchives_DB_Icon.png"
   alt="Mes_Archives"> <span class="label">Mes Archives</span></button>
       <button class="card" onclick="showModule('quiestce')"><span class="status ok"></span><span class="icon">👤</span><span class="label">QuiEstCe<br>Teams</span></button>
       <button class="card" onclick="showModule('absences')"><span class="status ok"></span><span class="icon">📅</span><span class="label">Recherche<br>Absence</span></button>
@@ -108,7 +108,7 @@
 <script>
   Office.onReady(info => {
     if(info.host===Office.HostType.Outlook){
-      const email = Office.context.mailbox.userProfile.emailAddress || "Primo.DELLASIEGA@banque-france.fr";
+      const email = Office.context.mailbox.userProfile.emailAddress || "Primo.DELLASIEGA.external2@test-banque-france.fr";
       document.getElementById("userEmail").textContent = email;
     }
   });
