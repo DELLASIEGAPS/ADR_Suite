@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="MailApp">
   <Id>a74f58a9-dce1-4037-9f76-6ea7472e6103</Id>
-  <Version>1.0.0.11</Version>
+  <Version>2.0.0.0</Version>
   <ProviderName>BDF - SPOT - ADR</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
   <DisplayName DefaultValue="ADR_Suite_V_PRE-PROD"/>
