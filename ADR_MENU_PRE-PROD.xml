@@ -85,7 +85,7 @@
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="ADR Banque de France"/>
-          <bt:String id="TaskpaneButton.Label" DefaultValue="ADR Suite"/>
+          <bt:String id="TaskpaneButton.Label" DefaultValue="SPOT_MENU"/>
         </bt:ShortStrings>
         <bt:LongStrings>
           <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Portail ADR Outlook Suite SPOT"/>
