@@ -10,11 +10,11 @@
   <DefaultLocale>fr-FR</DefaultLocale>
   <DisplayName DefaultValue="SPOT_MENU"/>
   <Description DefaultValue="Menu Web Banque de France."/>
-  <IconUrl DefaultValue="https://dellasiegaexternal2.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
-  <HighResolutionIconUrl DefaultValue="https://dellasiegaexternal2.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
-  <SupportUrl DefaultValue="https://github.com/DELLASIEGAexternal2/ADR_Suite"/>
+  <IconUrl DefaultValue="https://dellasiegaps.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
+  <HighResolutionIconUrl DefaultValue="https://dellasiegaps.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
+  <SupportUrl DefaultValue="https://dellasiegaps.github.io/ADR_Suite"/>
   <AppDomains>
-    <AppDomain>https://dellasiegaexternal2.github.io</AppDomain>
+    <AppDomain>https://dellasiegaps.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -27,7 +27,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://dellasiegaexternal2.github.io/ADR_Suite/Taskpane-V1-Adr-Suite.html"/>
+        <SourceLocation DefaultValue="https://dellasiegaps.github.io/ADR_Suite/Taskpane-V1-Adr-Suite.html"/>
         <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -76,12 +76,12 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16x16" DefaultValue="https://dellasiegaexternal2.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
-          <bt:Image id="Icon.32x32" DefaultValue="https://dellasiegaexternal2.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
-          <bt:Image id="Icon.80x80" DefaultValue="https://dellasiegaexternal2.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
+          <bt:Image id="Icon.16x16" DefaultValue="https://dellasiegaps.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
+          <bt:Image id="Icon.32x32" DefaultValue="https://dellasiegaps.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
+          <bt:Image id="Icon.80x80" DefaultValue="https://dellasiegaps.github.io/ADR_Suite/assets/img/banque_spot_logo.jpg"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="Taskpane.Url" DefaultValue="https://dellasiegaexternal2.github.io/ADR_Suite/Taskpane-V1-Adr-Suite.html"/>
+          <bt:Url id="Taskpane.Url" DefaultValue="https://dellasiegaps.github.io/ADR_Suite/Taskpane-V1-Adr-Suite.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="ADR Banque de France"/>
