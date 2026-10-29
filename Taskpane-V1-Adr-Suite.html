@@ -68,7 +68,7 @@
   <div class="container">
     <h2>Portail Outlook Banque de France</h2>
     <div class="grid">
-      <button class="card" onclick="showModule('herisson')"><span class="status ok"></span><img
+      <button class="card" onclick="openHerisson()"><span class="status ok"></span><img
   class="icon"
   src="https://dellasiegaexternal2.github.io/ADR_Suite/assets/img/hedgehog_high_contrast.svg"
   alt="Hérisson">
@@ -124,6 +124,30 @@
     deconnexion: {title:"🕒 Droit Déconnexion", desc:"Contrôle horaires envoi courriels client lourd. VSTO: Interception MailItem.Send COM. Impossible en Office.js (pas d'interception globale). Cible: Graph + backend + Transport Rules EXO + Purview DLP pour HNO.", apis:["Transport Rules","Purview DLP","Graph Mail.Send","Backend HNO"]},
     signature: {title:"✍️ Signature & Chiffrement", desc:"Paramétrage client lourd Outlook pour chiffrement + déport boutons bandeau nouveau mail. VSTO: Registre + Certificats. Cible: service PKI central + API sécurisée + Intune S/MIME + UI Web Add-in pour commande.", apis:["PKI API","Intune S/MIME","Exchange S/MIME","Graph"]},
   };
+
+  // Clic Hérisson : ouvre directement le web add-in (confirm.html) avec les données du mail ouvert
+  const HERISSON_URL = "https://dellasiegaps.github.io/Herisson/src/confirm.html";
+  function openHerisson(){
+    const item = Office.context.mailbox && Office.context.mailbox.item;
+    if(!item || !item.subject){
+      alert("Sélectionnez ou ouvrez d'abord le mail suspect à signaler.");
+      return;
+    }
+    const mailData = {
+      subject: item.subject,
+      sender: item.from && item.from.emailAddress,
+      senderName: item.from && item.from.displayName,
+      date: item.dateTimeCreated,
+      itemId: Office.context.mailbox.convertToRestId(item.itemId, Office.MailboxEnums.RestVersion.v2_0)
+    };
+    Office.context.ui.displayDialogAsync(HERISSON_URL, { height: 70, width: 60, displayInIframe: true }, (res) => {
+      if(res.status !== Office.AsyncResultStatus.Succeeded){
+        alert("Ouverture Hérisson impossible : " + res.error.message);
+        return;
+      }
+      setTimeout(() => res.value.messageChild(JSON.stringify(mailData)), 800);
+    });
+  }
 
   function showModule(key){
     const m = modules[key];
